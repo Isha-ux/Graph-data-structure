@@ -46,7 +46,7 @@ public class BFS {
 
     }
 
-    // function for breadth first search Algorithm---->O(V+E)
+    // function for breadth-first search Algorithm---->O(V+E)
     public static void bfs(ArrayList<Edge> graph[], int V) {
         Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean[V];
@@ -66,8 +66,7 @@ public class BFS {
         }
     }
 
-    // function for DFS depth first Search algorithm----->>>
-
+    
     public static void main(String[] args) {
         int V = 7;
 

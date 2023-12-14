@@ -45,7 +45,6 @@ public class DFSforSingleEntityGraph {
         graph[6].add(new Edge(6, 5));
 
     }
-
     // function for breadth first search O(V+E)
     public static void bfs(ArrayList<Edge> graph[], int V, boolean vis[], int start) {
         Queue<Integer> q = new LinkedList<>();
@@ -66,7 +65,8 @@ public class DFSforSingleEntityGraph {
         }
     }
 
-    // function for DFS depth first algorithm----->>>
+   
+    // function for DFS depth-first algorithm----->>>
 
     public static void dfs(ArrayList<Edge> graph[], int curr, boolean vis[]) {
         System.out.print(curr + " ");
@@ -95,7 +95,7 @@ public class DFSforSingleEntityGraph {
          */
         boolean vis[] = new boolean[V];
 
-        /*
+        /*//for connected components in graph
          * for (int i = 0; i < V; i++) {
          * if (vis[i] == false) {
          * bfs(graph, V, vis, i);
