@@ -76,7 +76,7 @@ public class DFSforSingleEntityGraph {
          */
         boolean vis[] = new boolean[V];
 
-        /*
+        /*//for connected components in graph
          * for (int i = 0; i < V; i++) {
          * if (vis[i] == false) {
          * bfs(graph, V, vis, i);
