@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Question {
+public class AllPath {
     static class Edge {
         int src;
         int dest;
