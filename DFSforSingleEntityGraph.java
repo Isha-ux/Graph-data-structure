@@ -45,6 +45,25 @@ public class DFSforSingleEntityGraph {
         graph[6].add(new Edge(6, 5));
 
     }
+    // function for breadth first search O(V+E)
+    public static void bfs(ArrayList<Edge> graph[], int V, boolean vis[], int start) {
+        Queue<Integer> q = new LinkedList<>();
+
+        q.add(start);
+        System.out.print("The Breadth First Search Sequence is: ");
+        while (!q.isEmpty()) {
+            int curr = q.remove();
+            if (vis[curr] == false) {
+                System.out.print(curr + " ");
+                vis[curr] = true;
+
+                for (int i = 0; i < graph[curr].size(); i++) {
+                    Edge e = graph[curr].get(i);
+                    q.add(e.dest);
+                }
+            }
+        }
+    }
 
    
     // function for DFS depth-first algorithm----->>>
